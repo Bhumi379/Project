@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup - Sleepie</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <img src="images/L1.png" alt="Sleepie Logo" class="logo"/>
+      <h2>Create Account</h2>
+      <form id="signupForm">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+        <button type="submit" class="login-btn">Sign Up</button>
+        <p class="signup-link">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Signup successful!");
+      window.location.href = "login.html"; // Redirect to login after signup
+    });
+  </script>
+</body>
+</html>
